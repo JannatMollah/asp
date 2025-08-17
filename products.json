@@ -1,0 +1,14 @@
+[
+ {"id":1, "product_code":"PC046", "product_name":"Ganozhi Soap", "price":"470", "image_url":"https://static.dxn2u.com/images/product-cache/index/PC036_MY_WEST.jpg"},
+ {"id":2, "product_code":"PC006", "product_name":"Ganozhi Toothpaste", "price":"1000", "image_url":"https://static.dxn2u.com/images/product-cache/index/PC006_MY_WEST.jpg"},
+ {"id":3, "product_code":"SC020", "product_name":"Aloe V Cleansin Gel", "price":"1310", "image_url":"https://static.dxn2u.com/images/product-cache/index/SC020_MY_WEST.jpg"},
+ {"id":4, "product_code":"SC032", "product_name":"Gempyuri Cleanser", "price":"1400", "image_url":"https://static.dxn2u.com/images/product-cache/index/SC076_MY_WEST.jpg"},
+ {"id":5, "product_code":"SC099", "product_name":"Papaya Facial Scrub", "price":"1100", "image_url":"https://static.dxn2u.com/images/product-cache/index/SC072_MY_WEST.jpg"},
+ {"id":6, "product_code":"SC100", "product_name":"Ganozhi Toner", "price":"1300", "image_url":"https://static.dxn2u.com/images/product-cache/index/SC009_MY_WEST.jpg"},
+ {"id":7, "product_code":"PC007", "product_name":"Chubby Baby Oil", "price":"750", "image_url":"https://static.dxn2u.com/images/product-cache/index/SC073_MY_WEST.jpg"},
+ {"id":8, "product_code":"PC094", "product_name":"Anti-Aging Face Mask", "price":"1410", "image_url":"https://static.dxn2u.com/images/product-cache/index/SC129_MY_WEST.jpg"},
+ {"id":9, "product_code":"PC014", "product_name":"Tea Tree Cream", "price":"850", "image_url":"https://static.dxn2u.com/images/product-cache/index/PC014_MY_WEST.jpg"},
+ {"id":10, "product_code":"FB157", "product_name":"Lingzhi Coffee", "price":"1400", "image_url":"https://static.dxn2u.com/images/product-cache/index/FB109_MY_WEST.jpg"},
+ {"id":11, "product_code":"FB098", "product_name":"White Coffee Zino", "price":"2550", "image_url":"https://static.dxn2u.com/images/product-cache/index/FB066_MY_WEST.jpg"},
+ {"id":12, "product_code":"DP101", "product_name":"Demo Product", "price":"1", "image_url":"https://www.dxn2u.com/images/icon/dxn-logo.png"}
+]
