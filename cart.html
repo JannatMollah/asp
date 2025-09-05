@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    <title>Alison Pharma</title>
-    <link rel="stylesheet" href="css/home.css">
+    <title>Your Cart - Alison Pharma</title>
+    <link rel="stylesheet" href="css/cart.css">
     <!-- font font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -17,8 +17,9 @@
             <div class="logo">ALISON<span> PHARMA</span></div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="home.html">Home</a></li>
                     <li><a href="home.html#product">Products</a></li>
+                    <li><a href="home.html#footer">About</a></li>
                     <li>
                         <a href="cart.html" class="cart-icon">
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -30,28 +31,55 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Alison Pharma</h1>
-            <p>Discover amazing products at unbeatable prices</p>
-            <a href="#" class="btn">Shop Now</a>
+    <main class="cart-container">
+        <h1 class="cart-title">Your Shopping Cart</h1>
+        <div class="cart-items-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="">
+                        </td>
+                        <td></td>
+                        <td>৳</td>
+                        <td>
+                            <div class="quantity-controls">
+                                <a href="" class="quantity-btn">-</a>
+                                <span class="quantity-input"></span>
+                                <a href="" class="quantity-btn">+</a>
+                            </div>
+                        </td>
+                        <td>৳</td>
+                        <td>
+                            <a href="" class="remove-btn">Remove</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </section>
 
-    <!-- Main Section -->
-    <main class="main-container">
-        <!-- Home Section -->
-        <section id="home-section">
-            <h2 class="section-title" id="product">All Products</h2>
-            <div class="product-grid">
-                <!-- Products add dynamically -->
+        <div class="cart-summary">
+            <div class="cart-total">
             </div>
-        </section>
+            <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+        </div>
+        <div class="empty-cart">
+            <p>Your cart is empty</p>
+            <a href="home.html#products" class="continue-shopping">Continue Shopping</a>
+        </div>
     </main>
 
-    <!-- Footer Section -->
-    <footer id="footer">
+    <footer>
         <div class="footer-content">
             <div class="footer-column">
                 <h3>ALISON PHARMA</h3>

@@ -1,0 +1,275 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background-color: #f0f2f5;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #d10073;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.cart-count {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+/* Main Content Styles */
+.checkout-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.checkout-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #d10073;
+    position: relative;
+}
+
+.checkout-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #d10073;
+    margin: 0.5rem auto;
+}
+
+/* Form Styles */
+.checkout-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group input[readonly] {
+    background-color: #f5f5f5;
+}
+
+.payment-method {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.payment-fields {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #d10073;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: opacity 0.3s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+/* Order Confirmation */
+.order-confirmation {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.order-confirmation h2 {
+    color: #d10073;
+    margin-bottom: 1rem;
+}
+
+.order-id {
+    font-size: 1.5rem;
+    color: #d10073;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.order-confirmation p {
+    margin-bottom: 1.5rem;
+}
+
+.error-message {
+    color: #e74c3c;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #F7F7F7;
+    color: black;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: left;
+}
+
+.footer-column h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: #d10073;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-column ul li a:hover {
+    color: #d10073;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    color: #6c757d;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+.copyright p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.copyright a {
+    color: #d10073;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+
+    .checkout-container {
+        padding: 0 1rem;
+    }
+}

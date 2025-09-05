@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Checkout - Alison Pharma</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <!-- font font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">ALISON<span> PHARMA</span></div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html#product">Products</a></li>
+                    <li><a href="home.html#footer">About</a></li>
+                    <li>
+                        <a href="cart.html" class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="checkout-container">
+        <h1 class="checkout-title">Checkout</h1>
+
+        <form id="checkout-form" class="checkout-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Shipping Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="total_amount">Total Payable</label>
+                <input type="text" id="total_amount" name="total_amount" readonly>
+            </div>
+
+            <div class="payment-method">
+                <div class="form-group">
+                    <label for="payment_method">Payment Method</label>
+                    <select id="payment_method" name="payment_method" required>
+                        <option value="">Select Payment Method</option>
+                        <option value="COD">Cash on Delivery</option>
+                        <option value="bKash">bKash</option>
+                        <option value="Nagad">Nagad</option>
+                        <option value="Rocket">Rocket</option>
+                    </select>
+                </div>
+
+                <div id="extra_payment_fields" class="payment-fields">
+                    <div class="form-group">
+                        <label for="payment_phone_number">Payment Phone Number</label>
+                        <input type="text" id="payment_phone_number" name="payment_phone_number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment_TXID_number">Transaction ID (TXID)</label>
+                        <input type="text" id="payment_TXID_number" name="payment_TXID_number">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Place Order</button>
+        </form>
+
+        <div class="order-confirmation" id="order-confirmation">
+            <h2>Thank you for your order!</h2>
+            <p>Your order has been placed successfully.</p>
+            <div class="order-id" id="order-id"></div>
+            <p>We'll process your order shortly.</p>
+            <a href="home.html" class="submit-btn" style="display: inline-block; margin-top: 1rem;">Continue
+                Shopping</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>ALISON PHARMA</h3>
+                <p>Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+            </div>
+            <div class="footer-column">
+                <h3>CUSTOMER SERVICE</h3>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li>Email: contact.alisonpharma@gmail.com</li>
+                    <li>Phone: +880 1732 - 854793</li>
+                    <li>Address: Tongi Station Road, Tongi, Gazipur, Dhaka</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;2025 <a href="home.html">Alison Pharma</a></p>
+            <p>Developed by: <a href="https://jannat.my.id/" target="_blank">Jannat Ul Ferdous Mollah</a></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
