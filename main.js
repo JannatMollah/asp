@@ -263,7 +263,7 @@ function loadCartPage() {
   // Continue shopping button
   document.querySelector('.continue-shopping').addEventListener('click', function (e) {
     e.preventDefault();
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
   });
 }
 
@@ -274,7 +274,7 @@ function loadCheckoutPage() {
 
   // If cart is empty, redirect to home page
   if (cart.items.length === 0) {
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
     return;
   }
 
@@ -356,5 +356,3 @@ function updateCartDisplay() {
   cart.updateCartCount();
 }
 
-// Add this to your existing home.html file in the head section:
-// <script src="main.js"></script>
